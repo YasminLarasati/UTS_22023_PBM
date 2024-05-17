@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MINZ CINEMA"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#4E9CDA"
+        android:textAlignment="center"/>
+    
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#7E7979"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"/>
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="title"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/txtWatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Watch For"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/usia"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/adult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adult (17+)"
+            android:textSize="12dp"/>
+        <RadioButton
+            android:id="@+id/kids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kids"
+            android:textSize="12dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Genre"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/thriller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thriller"/>
+        <CheckBox
+            android:id="@+id/horror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horror"/>
+        <CheckBox
+            android:id="@+id/action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/romance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Romance"/>
+        <CheckBox
+            android:id="@+id/comedy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comedy"/>
+        <CheckBox
+            android:id="@+id/fantasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fantasy"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Year"/>
+            <Spinner
+                android:id="@+id/pilihTahun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinTahun"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtJam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Duration(Hour)"/>
+            <Spinner
+                android:id="@+id/pilihJam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinJam"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMenit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Duration(Minutes)"/>
+            <Spinner
+                android:id="@+id/pilihMenit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinMenit"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"/>
+
+
+</LinearLayout>

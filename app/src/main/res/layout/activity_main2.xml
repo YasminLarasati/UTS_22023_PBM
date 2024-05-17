@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MINZ CINEMA"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#4E9CDA"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp">
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:id="@+id/isiJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp">
+        <TextView
+            android:id="@+id/watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watch For :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:id="@+id/isiWatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usia"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp">
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:id="@+id/isiGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Genre"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp">
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:id="@+id/isiTahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Year"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp">
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration :"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:id="@+id/isiDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
